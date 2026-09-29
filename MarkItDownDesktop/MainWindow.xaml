@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="MarkItDownDesktop.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MarkItDownDesktop"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="MarkItDownDesktop">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <NavigationView x:Name="Navigation" PaneDisplayMode="Left" OpenPaneLength="220" IsBackButtonVisible="Collapsed" SelectionChanged="Navigation_SelectionChanged">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="首页" Tag="home" Icon="Home" />
+            <NavigationViewItem Content="历史记录" Tag="history" Icon="Clock" />
+        </NavigationView.MenuItems>
+        <Frame x:Name="ContentFrame" />
+    </NavigationView>
+</Window>

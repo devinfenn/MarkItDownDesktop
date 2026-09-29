@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MarkItDownDesktop (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MarkItDownDesktop (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

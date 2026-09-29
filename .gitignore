@@ -1,0 +1,11 @@
+.build/
+Releases/
+MarkItDownDesktop/Tools/
+MarkItDownDesktop/bin/
+MarkItDownDesktop/obj/
+*.pfx
+.vs/
+*.user
+*.msix
+*.msixbundle
+AppPackages/
