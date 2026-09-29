@@ -1,21 +1,39 @@
+<div align="center">
+
+<img src="MarkItDownDesktop/Assets/AppIcon-preview.png" alt="MarkItDownDesktop 图标" width="88" />
+
 # MarkItDownDesktop
 
-MarkItDownDesktop 是 [Microsoft MarkItDown](https://github.com/microsoft/markitdown) 的独立 WinUI 3 桌面界面，与 Microsoft 无隶属关系。
+将文档转换为 Markdown 的 Windows 桌面应用
 
-## 下载和安装
+[**下载 Windows 安装包 · v0.1.4**](https://github.com/devinfenn/MarkItDownDesktop/releases/download/v0.1.4/MarkItDownDesktop-Setup-win-x64.exe) · [查看发布页](https://github.com/devinfenn/MarkItDownDesktop/releases/tag/v0.1.4)
 
-**普通用户直接下载 [Windows x64 安装包](https://github.com/devinfenn/MarkItDownDesktop/releases/download/v0.1.4/MarkItDownDesktop-Setup-win-x64.exe)，双击运行并按向导选择安装位置即可。无需编译，也无需安装 Python。**
+</div>
 
-安装时可选择创建桌面快捷方式，以及添加文件右键菜单。安装包已自带 MarkItDown。
+---
 
-## 使用
+## 开始使用
 
-- 从桌面快捷方式启动：打开图形界面，选择文件并转换。默认把 Markdown 保存到原文件旁边，也可在设置中修改输出目录。
-- 右键文件选择“使用 MarkItDown 转换为 Markdown”：直接在该文件所在目录生成 `.md`，不打开图形界面。
-- 如果目标目录已有同名 `.md`，程序会自动添加数字后缀，不覆盖原文件。
+1. 下载并运行安装包，在向导中选择安装位置。
+2. 打开 **MarkItDownDesktop**，选择文件，点击转换。
 
-支持 PDF、DOCX、PPTX、XLSX、XLS、CSV、HTML 和 TXT。历史记录与设置保存在本机用户数据目录。
+安装包自带 MarkItDown，**无需安装 Python，也无需自行编译**。
 
-## 关于源码
+## 两种转换方式
 
-仓库中的 `MarkItDownDesktop/` 和 `Packaging/` 是开发源码及打包脚本，普通用户无需使用。安装包内附有 MarkItDown 0.1.8 的 [MIT 许可证](Packaging/MARKITDOWN-LICENSE.txt)。
+| 方式 | 使用场景 |
+| --- | --- |
+| **桌面界面** | 选择文件、调整输出位置、查看转换历史。 |
+| **文件右键菜单** | 直接在原文件目录生成 Markdown，不打开桌面界面。安装时可选择启用。 |
+
+遇到同名 `.md` 文件时，会自动添加数字后缀，避免覆盖。
+
+## 支持格式
+
+PDF · DOCX · PPTX · XLSX · XLS · CSV · HTML · TXT
+
+## 关于项目
+
+这是基于 [Microsoft MarkItDown](https://github.com/microsoft/markitdown) 的独立 WinUI 3 图形界面，与 Microsoft 无隶属关系。安装包包含 MarkItDown 0.1.8，并附有其 [MIT 许可证](Packaging/MARKITDOWN-LICENSE.txt)。
+
+源码和打包脚本保存在本仓库，普通用户只需下载上方安装包。
